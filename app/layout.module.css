@@ -1,13 +1,16 @@
 .layout {
-    height: 70%;
-    width: 40%;
-    padding: 1.5rem;
+    height: 53rem;
+    width: 33rem;
+    padding: 2rem;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
     border: 5px solid grey;
     border-radius: 10px 10px 110px 10px;
+    background-color: #c7c4c5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr)
+    
   }
