@@ -1,0 +1,25 @@
+.container {
+    grid-column: 4/6;
+    grid-row: 5;
+    height: 50%;
+    width: 65%;
+    align-self:end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: rotate(-20deg);
+    margin-left: 4rem;
+
+    
+}
+
+.one {
+    border: 2px solid black;
+    width: 0.7rem;
+    height: 100%;
+    border-radius: 5px;
+    background-color: darkgrey;
+    
+}
+
+
