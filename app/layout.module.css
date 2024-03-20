@@ -1,0 +1,13 @@
+.layout {
+    height: 70%;
+    width: 40%;
+    padding: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    border: 5px solid grey;
+    border-radius: 10px 10px 110px 10px;
+  }
