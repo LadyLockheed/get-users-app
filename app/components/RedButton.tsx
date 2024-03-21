@@ -7,7 +7,7 @@ interface RedButtonProps {
 }
 const RedButton: React.FC<RedButtonProps> = ({getUser})=> {
 
-    return <button className={styles.redButton} onClick={()=> getUser()}>Get users</button>
+    return <button className={styles.redButton} onClick={()=> getUser()}>Get user</button>
 }
 
 export default RedButton
