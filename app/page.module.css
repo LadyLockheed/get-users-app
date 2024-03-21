@@ -1,0 +1,15 @@
+.onButton {
+  grid-column: 3/4;
+  grid-row: 4;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 40px;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.appText {
+  grid-column: 1/4;
+}
