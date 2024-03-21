@@ -50,20 +50,20 @@ interface userData {
 const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
 
     const screenClassName = `${styles.screen} ${user.length !== 0 ? styles.scrollbar : ''}`
-    const userData = user.map((u, i)=> {
+    const userData = user.map((u)=> {
 
         return (
-            <>
-                <p key={u.name.title}>Title: {u.name.title}</p>
-                <p key={u.name.first}>Firstname:{u.name.first}</p>
-                <p key={u.name.last}>Lastname: {u.name.last}</p>
-                <p key={u.gender}>Gender: {u.gender}</p>
-                <p key={u.location.city}>Location: {u.location.city}</p>
-                <p key={u.phone}>Phone: {u.phone}</p>
-                <p key={u.email}>Email: {u.email}</p>
-                <p key={u.cell}>Cell: {u.cell}</p>
-                <p key={u.id.name}>Name: {u.id.name}</p>
-            </>
+            <div key={'key'} className={styles.userTextContainer}>
+                <p className={styles.userText} key={u.name.title}><span className={styles.bold}>Title: </span>{u.name.title}</p>
+                <p className={styles.userText} key={u.name.first}><span className={styles.bold}>Firstname: </span>{u.name.first}</p>
+                <p className={styles.userText} key={u.name.last}><span className={styles.bold}>Lastname: </span>{u.name.last}</p>
+                <p className={styles.userText} key={u.gender}><span className={styles.bold}>Gender: </span>{u.gender}</p>
+                <p className={styles.userText} key={u.location.city}><span className={styles.bold}>Location: </span>{u.location.city}</p>
+                <p className={styles.userText} key={u.phone}><span className={styles.bold}>Phone: </span>{u.phone}</p>
+                <p className={styles.userText} key={u.email}><span className={styles.bold}>Email: </span>{u.email}</p>
+                <p className={styles.userText} key={u.cell}><span className={styles.bold}>Cell: </span>{u.cell}</p>
+                <p className={styles.userText} key={u.id.name}><span className={styles.bold}>Name: </span>{u.id.name}</p>
+            </div>
         )
     })
 
