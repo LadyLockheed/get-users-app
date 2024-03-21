@@ -3,6 +3,8 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import OffScreen from './components/OffScreen'
 import styles from './page.module.css';
+import Image from 'next/image';
+import PowerButton from '../public/power-button.png'
 
 const Page: React.FC = ()=> {
 
@@ -11,8 +13,11 @@ const Page: React.FC = ()=> {
   return (
     <>
       <OffScreen/>
-      <button onClick={() => router.push('/UserView')} className={styles.onButton}>Click to turn on</button>
-      <h3 className= {styles.appText}>Your random user getter</h3>
+      <h3 className= {styles.appText}>Click powerbutton to turn on</h3>
+      <button onClick={() => router.push('/UserView')} className={styles.onButton}>
+        <Image src="/power-button.png" alt="My Icon" width={70} height={70}/>
+      </button>
+
     </>
     
   );
