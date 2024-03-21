@@ -1,18 +1,21 @@
+'use client'
+import React from 'react';
+import { useRouter } from 'next/navigation';
+import OffScreen from './components/OffScreen'
+import styles from './page.module.css';
 
-import styles from './page.module.css'
-import GetUserButton from './components/GetUserButton'
-import Home from './home/page'
+const Page: React.FC = ()=> {
 
-
-export default function Page() {
-
+  const router = useRouter();
 
   return (
-   
-   <div>
-      <h2 className={styles.header}>Welcome person</h2>
-      <Home/>
-   </div>
+    <>
+      <OffScreen/>
+      <button onClick={() => router.push('/UserView')} className={styles.onButton}>Click to turn on</button>
+    </>
     
   );
+
 }
+
+export default Page
