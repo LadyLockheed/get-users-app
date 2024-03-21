@@ -14,7 +14,7 @@ const Page: React.FC = ()=> {
       <OffScreen/>
       <h3 className= {styles.appText}>Click powerbutton to turn on</h3>
       <button onClick={() => router.push('/UserView')} className={styles.onButton}>
-        <Image src="/power-button.png" alt="My Icon" width={70} height={70}/>
+        <Image src="/power-button.png" alt="Enter app button" width={70} height={70}/>
       </button>
 
     </>

@@ -37,7 +37,7 @@ const About = ()=> {
             </div>
 
             <button onClick={() => router.push('/UserView')} className={styles.returnButton}>
-                <Image src="/return.png" alt="go back" width={40} height={40}/>
+                <Image src="/return.png" alt="Go back button" width={40} height={40}/>
             </button>
         </>
     )
