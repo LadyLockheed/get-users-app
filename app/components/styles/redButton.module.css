@@ -7,6 +7,10 @@
     background-color: #851c53;
     border-radius: 10px;
     border: 3px solid black;
-    transform: rotate(-20deg);
-   
+    transform: rotate(-20deg); 
+    cursor: pointer;
+}
+
+.redButton:hover{
+    background-color: #b92573;
 }
