@@ -1,0 +1,34 @@
+.aboutButton, .turnOffButton {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.aboutButton:hover, .turnOffButton:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.turnOffContainer, .aboutContainer {
+    grid-row: 5;
+    transform: rotate(-20deg);
+    justify-self: end;
+}
+
+.turnOffContainer {
+    grid-column: 2/3;
+}
+
+.aboutContainer {
+    grid-column: 3/4;
+    
+}
+
+.turnOffText, .aboutText {
+    margin-left: 0.5rem;
+    color: #3d1c7d;
+}
+
+
+
