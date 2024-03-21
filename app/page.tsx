@@ -12,6 +12,7 @@ const Page: React.FC = ()=> {
     <>
       <OffScreen/>
       <button onClick={() => router.push('/UserView')} className={styles.onButton}>Click to turn on</button>
+      <h3 className= {styles.appText}>Your random user getter</h3>
     </>
     
   );

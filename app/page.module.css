@@ -6,3 +6,8 @@
   border: 3px solid black;
   cursor: pointer;
 }
+
+.appText {
+  color: #3d1c7d;
+  grid-column: 1/4;
+}
