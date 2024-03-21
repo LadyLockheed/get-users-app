@@ -77,8 +77,8 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user, hasError})=> {
                
                 {user.length === 0 && !isLoading && !hasError ? 
                     <>
-                        <h1 className={styles.header1}>Welcome person</h1>
-                        <h3 className={styles.header3}>Lets find you some users</h3> 
+                        <h1 className={styles.header}>Welcome person</h1>
+                        <h3 className={styles.header}>Lets find you a random user</h3> 
                     </>
                     : 
                     userData
