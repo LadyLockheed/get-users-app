@@ -4,6 +4,7 @@ import styles from './styles/screen.module.css'
 interface ScreenProps {
     isLoading: boolean;
     user: userData[] 
+    hasError: boolean;
 }
 
 interface userData {
@@ -50,6 +51,7 @@ interface userData {
 const Screen: React.FC<ScreenProps> = ({isLoading, user, hasError})=> {
 
     const screenClassName = `${styles.screen} ${user.length !== 0 ? styles.scrollbar : ''}`
+
     const userData = user.map((u)=> {
 
         return (
