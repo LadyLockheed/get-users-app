@@ -21,13 +21,11 @@
 }
 
 .aboutContainer {
-    grid-column: 3/4;
-    
+    grid-column: 3/4; 
 }
 
 .turnOffText, .aboutText {
     margin-left: 0.5rem;
-    color: #3d1c7d;
 }
 
 

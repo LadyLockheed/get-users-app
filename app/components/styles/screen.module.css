@@ -22,15 +22,9 @@
     scrollbar-width: thin;
     scrollbar-color: #ff000033 #ffa50057
 }
+
 .userTextContainer {
     text-align: left;
-}
-.header {
-    color: #3d1c7d 
-}
-
-.text {
-    color: #3d1c7d
 }
 
 .bold {

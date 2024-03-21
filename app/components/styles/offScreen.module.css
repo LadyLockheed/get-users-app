@@ -8,18 +8,11 @@
     border: 3px solid black;
 
 }
+
 .screen {
     padding: 1rem;
     text-align: center;
     height: 100%;
     background-color: #616b39;
     border: 3px solid black;
-}
-
-.header1 {
-    color: #3d1c7d
-}
-
-.header3 {
-    color:  #3d1c7d
 }
