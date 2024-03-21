@@ -3,8 +3,7 @@ import styles from './styles/screen.module.css'
 
 interface ScreenProps {
     isLoading: boolean;
-    user: userData[]
-    
+    user: userData[] 
 }
 
 interface userData {
@@ -61,7 +60,7 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
                 <p key={u.gender}>Gender: {u.gender}</p>
                 <p key={u.location.city}>Location: {u.location.city}</p>
                 <p key={u.phone}>Phone: {u.phone}</p>
-                <p key={i}>Email: {u.email}</p>
+                <p key={u.email}>Email: {u.email}</p>
                 <p key={u.cell}>Cell: {u.cell}</p>
                 <p key={u.id.name}>Name: {u.id.name}</p>
             </>
@@ -80,9 +79,10 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
                     : 
                     userData
                 }
+                {isLoading && <h3>isLoading...</h3>}
              
             </div>
-            {isLoading && <h3>isLoading...</h3>}
+            
         </div>
      )    
 }
