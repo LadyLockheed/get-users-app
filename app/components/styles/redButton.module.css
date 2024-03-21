@@ -1,0 +1,12 @@
+.redButton {
+    grid-column: 4 / 6;
+    justify-self: end;
+    width: 8rem;
+    grid-row: 4;
+    height: 3rem;
+    background-color: #851c53;
+    border-radius: 10px;
+    border: 3px solid black;
+    transform: rotate(-20deg);
+   
+}
