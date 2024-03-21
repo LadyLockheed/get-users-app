@@ -54,15 +54,19 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
 
         return (
             <div key={'key'} className={styles.userTextContainer}>
-                <p className={styles.userText} key={u.name.title}><span className={styles.bold}>Title: </span>{u.name.title}</p>
-                <p className={styles.userText} key={u.name.first}><span className={styles.bold}>Firstname: </span>{u.name.first}</p>
-                <p className={styles.userText} key={u.name.last}><span className={styles.bold}>Lastname: </span>{u.name.last}</p>
-                <p className={styles.userText} key={u.gender}><span className={styles.bold}>Gender: </span>{u.gender}</p>
-                <p className={styles.userText} key={u.location.city}><span className={styles.bold}>Location: </span>{u.location.city}</p>
-                <p className={styles.userText} key={u.phone}><span className={styles.bold}>Phone: </span>{u.phone}</p>
-                <p className={styles.userText} key={u.email}><span className={styles.bold}>Email: </span>{u.email}</p>
-                <p className={styles.userText} key={u.cell}><span className={styles.bold}>Cell: </span>{u.cell}</p>
-                <p className={styles.userText} key={u.id.name}><span className={styles.bold}>Name: </span>{u.id.name}</p>
+
+                <h3 className={styles.text}>Random user:</h3>
+
+                <p className={styles.text} key={u.name.title}><span className={styles.bold}>Title: </span>{u.name.title}</p>
+                <p className={styles.text} key={u.name.first}><span className={styles.bold}>Firstname: </span>{u.name.first}</p>
+                <p className={styles.text} key={u.name.last}><span className={styles.bold}>Lastname: </span>{u.name.last}</p>
+                <p className={styles.text} key={u.gender}><span className={styles.bold}>Gender: </span>{u.gender}</p>
+                <p className={styles.text} key={u.location.city}><span className={styles.bold}>Location: </span>{u.location.city}</p>
+                <p className={styles.text} key={u.phone}><span className={styles.bold}>Phone: </span>{u.phone}</p>
+                <p className={styles.text} key={u.email}><span className={styles.bold}>Email: </span>{u.email}</p>
+                <p className={styles.text} key={u.cell}><span className={styles.bold}>Cell: </span>{u.cell}</p>
+                <p className={styles.text} key={u.id.name}><span className={styles.bold}>Name: </span>{u.id.name}</p>
+
             </div>
         )
     })
