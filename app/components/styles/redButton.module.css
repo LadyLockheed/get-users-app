@@ -1,16 +1,25 @@
-.redButton {
+.redButtonContainer {
     grid-column: 4 / 6;
-    justify-self: end;
-    width: 8rem;
     grid-row: 4;
+    justify-self: end;
+    transform: rotate(-20deg); 
+
+}
+
+.redButton {
+    width: 8rem;
     height: 3rem;
     background-color: #851c53;
     border-radius: 10px;
     border: 3px solid black;
-    transform: rotate(-20deg); 
     cursor: pointer;
 }
 
 .redButton:hover{
     background-color: #b92573;
+}
+
+.getUserText {
+    color: #3d1c7d;
+    margin-left: 0.5rem;
 }
