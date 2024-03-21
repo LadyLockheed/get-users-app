@@ -26,13 +26,11 @@ const About = ()=> {
                     But then the idea appeared about a gameboy classic. 
                     If I had known from the start what I wanted to do, the file structure and commit messages would have looked completely different. 
                     I also took the opportunity to try a new framework for me, NextJS.
-                    I had not practiced much with css either, but not I got a chance to play around a bit.
-                    The hardest thing has been limiting myself with what I wanted to implement. 
+                    I had not practiced much with css either, but now I got a chance to play around a bit.
+                    The hardest thing has been trying limiting what I wanted to try and do. 
+                    For example I wanted to use React Context as global state management. 
                     And there is a lot I want to change in the app. <br/>
                     But all in all, it was great fun to build! <br/>
-                    For the future I want to implement: <br/>
-                    React context as global state management
-
                 </p>
             </div>
 
