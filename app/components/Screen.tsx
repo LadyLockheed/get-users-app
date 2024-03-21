@@ -47,7 +47,7 @@ interface userData {
     }
 }
 
-const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
+const Screen: React.FC<ScreenProps> = ({isLoading, user, hasError})=> {
 
     const screenClassName = `${styles.screen} ${user.length !== 0 ? styles.scrollbar : ''}`
     const userData = user.map((u)=> {
@@ -75,7 +75,7 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
         <div className={styles.outerFrame}>
             <div className={screenClassName}>
                
-                {user.length === 0 ? 
+                {user.length === 0 && !isLoading && !hasError ? 
                     <>
                         <h1 className={styles.header1}>Welcome person</h1>
                         <h3 className={styles.header3}>Lets find you some users</h3> 
@@ -83,7 +83,8 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user})=> {
                     : 
                     userData
                 }
-                {isLoading && <h3>isLoading...</h3>}
+                {isLoading && <h3 className={styles.text}>isLoading...</h3>}
+                {hasError && <h3 className={styles.text}>Something went wrong, please try again.</h3>}
              
             </div>
             
