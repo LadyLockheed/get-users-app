@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import CrossButton from '../components/CrossButton'
 import RedButton from '../components/RedButton'
-import SelectAndStartButton from '../components/SelectAndStartButton'
+import GreyButtons from '../components/GreyButtons'
 import Screen from '../components/Screen'
 import axios from 'axios'
 import styles from './userView.module.css'
@@ -39,7 +39,7 @@ const UserView = ()=> {
       <Screen isLoading={isLoading} user={user}/>
       <CrossButton/>
       <RedButton getUser={fetchUser}/>
-      <SelectAndStartButton/>
+      <GreyButtons/>
     </>
     )
 }
