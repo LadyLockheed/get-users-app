@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation';
 import OffScreen from './components/OffScreen'
 import styles from './page.module.css';
 import Image from 'next/image';
-import PowerButton from '../public/power-button.png'
 
 const Page: React.FC = ()=> {
 

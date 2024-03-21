@@ -7,6 +7,9 @@ interface ScreenProps {
     hasError: boolean;
 }
 
+//This is not a complete interface over everything
+//available in the userData object.
+//To save time I only selected some propertys.
 interface userData {
     cell: string;
     dob: {
@@ -57,17 +60,17 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user, hasError})=> {
         return (
             <div key={'key'} className={styles.userTextContainer}>
 
-                <h3 className={styles.text}>Random user:</h3>
+                <h3>Random user:</h3>
 
-                <p className={styles.text} key={u.name.title}><span className={styles.bold}>Title: </span>{u.name.title}</p>
-                <p className={styles.text} key={u.name.first}><span className={styles.bold}>Firstname: </span>{u.name.first}</p>
-                <p className={styles.text} key={u.name.last}><span className={styles.bold}>Lastname: </span>{u.name.last}</p>
-                <p className={styles.text} key={u.gender}><span className={styles.bold}>Gender: </span>{u.gender}</p>
-                <p className={styles.text} key={u.location.city}><span className={styles.bold}>Location: </span>{u.location.city}</p>
-                <p className={styles.text} key={u.phone}><span className={styles.bold}>Phone: </span>{u.phone}</p>
-                <p className={styles.text} key={u.email}><span className={styles.bold}>Email: </span>{u.email}</p>
-                <p className={styles.text} key={u.cell}><span className={styles.bold}>Cell: </span>{u.cell}</p>
-                <p className={styles.text} key={u.id.name}><span className={styles.bold}>Name: </span>{u.id.name}</p>
+                <p key={u.name.title}><span className={styles.bold}>Title: </span>{u.name.title}</p>
+                <p key={u.name.first}><span className={styles.bold}>Firstname: </span>{u.name.first}</p>
+                <p key={u.name.last}><span className={styles.bold}>Lastname: </span>{u.name.last}</p>
+                <p key={u.gender}><span className={styles.bold}>Gender: </span>{u.gender}</p>
+                <p key={u.location.city}><span className={styles.bold}>Location: </span>{u.location.city}</p>
+                <p key={u.phone}><span className={styles.bold}>Phone: </span>{u.phone}</p>
+                <p key={u.email}><span className={styles.bold}>Email: </span>{u.email}</p>
+                <p key={u.cell}><span className={styles.bold}>Cell: </span>{u.cell}</p>
+                <p key={u.id.name}><span className={styles.bold}>Name: </span>{u.id.name}</p>
 
             </div>
         )
@@ -85,8 +88,8 @@ const Screen: React.FC<ScreenProps> = ({isLoading, user, hasError})=> {
                     : 
                     userData
                 }
-                {isLoading && <h3 className={styles.text}>isLoading...</h3>}
-                {hasError && <h3 className={styles.text}>Something went wrong, please try again.</h3>}
+                {isLoading && <h3>isLoading...</h3>}
+                {hasError && <h3>Something went wrong, please try again.</h3>}
              
             </div>
             
