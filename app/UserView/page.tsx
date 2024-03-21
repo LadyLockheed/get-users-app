@@ -40,7 +40,7 @@ const UserView: React.FC = ()=> {
         <>  
             <Screen isLoading={isLoading} user={user} hasError={hasError}/>
             <CrossButton/>
-            <RedButton getUser={fetchUser}/>
+            <RedButton getUser={fetchUser} isLoading={isLoading}/>
             <GreyButtons/>
         </>
     )

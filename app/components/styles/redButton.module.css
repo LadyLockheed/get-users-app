@@ -19,7 +19,10 @@
     background-color: #b92573;
 }
 
+.redButton:disabled {
+    background-color: #85576f;
+}
+
 .getUserText {
-    color: #3d1c7d;
     margin-left: 0.5rem;
 }
