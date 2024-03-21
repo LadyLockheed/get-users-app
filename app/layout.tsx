@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {  retroFont } from './fonts'
 import "./globals.css";
 import styles from './layout.module.css'
-import VolumeBars from "./components/VolumeBars";
+import SoundOutputBars from "./components/SoundOutputBars";
 
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={retroFont.className}>
         <div className={styles.layout}>
           {children} 
-          <VolumeBars/>
+          <SoundOutputBars/>
         </div>
       </body>
     </html>
