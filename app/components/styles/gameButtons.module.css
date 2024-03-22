@@ -1,4 +1,4 @@
-.redButtonContainer {
+.gameButtonsContainer {
     grid-column: 4 / 6;
     grid-row: 4;
     justify-self: end;
@@ -6,7 +6,7 @@
 
 }
 
-.redButton {
+.gameButtons {
     width: 8rem;
     height: 3rem;
     background-color: #851c53;
@@ -15,11 +15,11 @@
     cursor: pointer;
 }
 
-.redButton:hover{
+.gameButtons:hover{
     background-color: #b92573;
 }
 
-.redButton:disabled {
+.gameButtons:disabled {
     background-color: #85576f;
 }
 

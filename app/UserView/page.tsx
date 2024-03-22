@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import CrossButton from "../components/CrossButton";
-import RedButton from "../components/RedButton";
-import GreyButtons from "../components/GreyButtons";
-import Screen from "../components/Screen";
+import DirectionalPad from "../components/DirectionalPad";
+import GameButtons from "../components/GameButtons";
+import SelectAndStartButtons from "../components/SelectAndStartButtons";
+import OnScreen from "../components/OnScreen";
 import axios from "axios";
 
 const UserView: React.FC = () => {
@@ -30,10 +30,10 @@ const UserView: React.FC = () => {
 
   return (
     <>
-      <Screen isLoading={isLoading} users={users} hasError={hasError} />
-      <CrossButton />
-      <RedButton onClick={fetchUser} isLoading={isLoading} />
-      <GreyButtons />
+      <OnScreen isLoading={isLoading} users={users} hasError={hasError} />
+      <DirectionalPad />
+      <GameButtons onClick={fetchUser} isLoading={isLoading} />
+      <SelectAndStartButtons />
     </>
   );
 };

@@ -1,15 +1,15 @@
 import React from "react";
-import styles from "./styles/screen.module.css";
+import styles from "./styles/onScreen.module.css";
 import ScreenContent from "./ScreenContent";
 import { User } from "../Types/User";
 
-interface ScreenProps {
+interface OnScreenProps {
   isLoading: boolean;
   users: User[];
   hasError: boolean;
 }
 
-const Screen: React.FC<ScreenProps> = ({ isLoading, users, hasError }) => {
+const OnScreen: React.FC<OnScreenProps> = ({ isLoading, users, hasError }) => {
   const screenClassName = `${styles.screen} ${users.length !== 0 ? styles.scrollbar : ""}`;
 
   return (
@@ -25,4 +25,4 @@ const Screen: React.FC<ScreenProps> = ({ isLoading, users, hasError }) => {
   );
 };
 
-export default Screen;
+export default OnScreen;
