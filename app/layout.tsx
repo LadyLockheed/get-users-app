@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import {  retroFont } from './fonts'
+import { retroGameFont } from "./fonts";
 import "./globals.css";
-import styles from './layout.module.css'
-import VolumeBars from "./components/VolumeBars";
-
+import styles from "./layout.module.css";
+import SoundOutputBars from "./components/SoundOutputBars";
 
 export const metadata: Metadata = {
   title: "Get users",
@@ -17,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={retroFont.className}>
+      <body className={retroGameFont.className}>
         <div className={styles.layout}>
-          {children} 
-          <VolumeBars/>
+          {children}
+          <SoundOutputBars />
         </div>
       </body>
     </html>

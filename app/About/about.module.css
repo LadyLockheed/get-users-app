@@ -9,8 +9,8 @@
 
 .aboutText {
     color: #3d1c7d;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
+    font-size: 0.9rem;
 }
 
 .returnButton {

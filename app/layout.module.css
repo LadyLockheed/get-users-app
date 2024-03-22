@@ -10,7 +10,7 @@
     border-radius: 10px 10px 110px 10px;
     background-color: #c7c4c5;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr)
+    grid-template-columns: repeat(5, minmax(20%, 1fr));
+    grid-template-rows: repeat(5, minmax(20%, 1fr));
     
 }

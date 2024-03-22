@@ -1,10 +1,9 @@
-import { Inter, DotGothic16  } from "next/font/google";
-
+import { Inter, Poppins } from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"] });
 
-export const retroFont = DotGothic16({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap'
-})
+export const retroGameFont = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
