@@ -40,4 +40,5 @@ export interface User {
     date: string;
     age: number;
   };
+  nat: string;
 }
