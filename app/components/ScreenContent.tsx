@@ -14,45 +14,52 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
   users,
 }) => {
   const hasUser = users.length > 0;
-
-  const userData = users.map((u) => {
+  const userData = users.map((u, i) => {
     return (
       <>
-        <p key={u.name.title}>
+        <p key={u.name.title + i}>
           <span className={styles.bold}>Title: </span>
           {u.name.title}
         </p>
-        <p key={u.name.first}>
+        <p key={u.name.first + i}>
           <span className={styles.bold}>Firstname: </span>
           {u.name.first}
         </p>
-        <p key={u.name.last}>
+        <p key={u.name.last + i}>
           <span className={styles.bold}>Lastname: </span>
           {u.name.last}
         </p>
-        <p key={u.gender}>
+        <p key={u.gender + i}>
           <span className={styles.bold}>Gender: </span>
           {u.gender}
         </p>
-        <p key={u.location.city}>
-          <span className={styles.bold}>Location: </span>
+        <p key={u.location.street.name + i}>
+          <span className={styles.bold}>Street: </span>
+          {u.location.street.name}
+        </p>
+        <p key={u.location.city + i}>
+          <span className={styles.bold}>City: </span>
           {u.location.city}
         </p>
-        <p key={u.phone}>
+        <p key={u.location.country + i}>
+          <span className={styles.bold}>Country: </span>
+          {u.location.country}
+        </p>
+        <p key={u.phone + i}>
           <span className={styles.bold}>Phone: </span>
           {u.phone}
         </p>
-        <p key={u.email}>
+        <p key={u.email + i}>
           <span className={styles.bold}>Email: </span>
           {u.email}
         </p>
-        <p key={u.cell}>
+        <p key={u.cell + i}>
           <span className={styles.bold}>Cell: </span>
           {u.cell}
         </p>
-        <p key={u.id.name}>
-          <span className={styles.bold}>Name: </span>
-          {u.id.name}
+        <p key={u.nat + i}>
+          <span className={styles.bold}>Nationality: </span>
+          {u.nat}
         </p>
       </>
     );
