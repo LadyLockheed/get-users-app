@@ -67,10 +67,14 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
 
   const content = () => {
     if (isLoading) {
-      return <h3>isLoading...</h3>;
+      return <h3 className={styles.header}>isLoading...</h3>;
     }
     if (hasError) {
-      return <h3>Something went wrong, please try again.</h3>;
+      return (
+        <h3 className={styles.header}>
+          Something went wrong, please try again.
+        </h3>
+      );
     }
     if (hasUser) {
       return (
