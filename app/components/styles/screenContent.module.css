@@ -1,0 +1,17 @@
+.userTextContainer {
+    text-align: left;
+}
+
+.userTextContainer > p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.userTextContainer > h3 {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
