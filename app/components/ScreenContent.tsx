@@ -14,50 +14,50 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
   users,
 }) => {
   const hasUser = users.length > 0;
-  const userData = users.map((u, i) => {
+  const userData = users.map((u) => {
     return (
       <>
-        <p key={u.name.title + i}>
+        <p key={u.name.title + 1}>
           <span className={styles.bold}>Title: </span>
           {u.name.title}
         </p>
-        <p key={u.name.first + i}>
+        <p key={u.name.first + 2}>
           <span className={styles.bold}>Firstname: </span>
           {u.name.first}
         </p>
-        <p key={u.name.last + i}>
+        <p key={u.name.last + 3}>
           <span className={styles.bold}>Lastname: </span>
           {u.name.last}
         </p>
-        <p key={u.gender + i}>
+        <p key={u.gender + 4}>
           <span className={styles.bold}>Gender: </span>
           {u.gender}
         </p>
-        <p key={u.location.street.name + i}>
+        <p key={u.location.street.name + 5}>
           <span className={styles.bold}>Street: </span>
           {u.location.street.name}
         </p>
-        <p key={u.location.city + i}>
+        <p key={u.location.city + 6}>
           <span className={styles.bold}>City: </span>
           {u.location.city}
         </p>
-        <p key={u.location.country + i}>
+        <p key={u.location.country + 7}>
           <span className={styles.bold}>Country: </span>
           {u.location.country}
         </p>
-        <p key={u.phone + i}>
+        <p key={u.phone + 8}>
           <span className={styles.bold}>Phone: </span>
           {u.phone}
         </p>
-        <p key={u.email + i}>
+        <p key={u.email + 9}>
           <span className={styles.bold}>Email: </span>
           {u.email}
         </p>
-        <p key={u.cell + i}>
+        <p key={u.cell + 10}>
           <span className={styles.bold}>Cell: </span>
           {u.cell}
         </p>
-        <p key={u.nat + i}>
+        <p key={u.nat + 11}>
           <span className={styles.bold}>Nationality: </span>
           {u.nat}
         </p>
