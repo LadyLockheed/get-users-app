@@ -1,20 +1,22 @@
-import React from 'react'
-import styles from './styles/redButton.module.css'
+import React from "react";
+import styles from "./styles/redButton.module.css";
 
 interface RedButtonProps {
-    getUser: ()=> void
-    isLoading: boolean;
+  onClick: () => void;
+  isLoading: boolean;
 }
 
-const RedButton: React.FC<RedButtonProps> = ( { getUser, isLoading } )=> {
+const RedButton: React.FC<RedButtonProps> = ({ onClick, isLoading }) => {
+  return (
+    <div className={styles.redButtonContainer}>
+      <button
+        className={styles.redButton}
+        onClick={() => onClick()}
+        disabled={isLoading}
+      ></button>
+      <h5 className={styles.getUserText}>GET USER</h5>
+    </div>
+  );
+};
 
-    return (
-
-        <div className={styles.redButtonContainer}>
-            <button className={styles.redButton} onClick={()=> getUser()} disabled={isLoading}></button>
-            <h5 className={styles.getUserText}>GET USER</h5>
-        </div>
-    )
-}
-
-export default RedButton
+export default RedButton;
