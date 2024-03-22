@@ -1,13 +1,12 @@
-import React from 'react'
-import styles from './styles/offScreen.module.css'
+import React from "react";
+import styles from "./styles/offScreen.module.css";
 
-const OffScreen: React.FC = ()=> {
+const OffScreen: React.FC = () => {
+  return (
+    <div className={styles.outerFrame}>
+      <div className={styles.screen}></div>
+    </div>
+  );
+};
 
-    return (
-        <div className={styles.outerFrame}>
-            <div className={styles.screen}></div>
-        </div>
-     )    
-}
-
-export default OffScreen
+export default OffScreen;
