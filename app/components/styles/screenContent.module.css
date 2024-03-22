@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 .userTextContainer {
     text-align: left;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 .userTextContainer > p {
-    font-size: 0.7rem;
     line-height: 1.2rem;
 }
 
@@ -11,7 +12,12 @@
     margin-bottom: 1rem;
 }
 
+.header {
+    font-family: 'DotGothic16', sans-serif;
+}
+
 .bold {
     font-weight: bold;
     font-size: 0.7rem;
 }
+
